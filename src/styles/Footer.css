@@ -1,0 +1,26 @@
+.footer {
+  width: 100%;
+  padding: 1rem;
+  background: var(--background-dark);
+  text-align: center;
+  z-index: 1000;
+}
+
+.footer-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+}
+
+.footer-text {
+  color: var(--text-secondary);
+  opacity: 0.7;
+  font-size: 0.9rem !important;
+  letter-spacing: 0.5px;
+  transition: opacity 0.3s ease;
+}
+
+.footer:hover .footer-text {
+  opacity: 1;
+}

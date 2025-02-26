@@ -35,14 +35,32 @@
 }
 
 .stats-title h1 {
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  font-size: 8rem;
   font-weight: 900;
   letter-spacing: -2px;
-  margin-bottom: 1rem;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   line-height: 1.1;
+}
+
+@media (max-width: 1200px) {
+  .stats-title h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-title h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-title h1 {
+    font-size: 3rem;
+  }
 }
 
 .chart-section {

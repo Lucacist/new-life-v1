@@ -53,7 +53,7 @@ const Stats = () => {
     <div className="stats-container">
       <div className="stats-content">
         <div className="stats-title">
-          <Typography variant="h1">Statistiques du Tabac en France</Typography>
+          <h1>Statistiques sur le Tabagisme</h1>
         </div>
 
         <div className="chart-section">

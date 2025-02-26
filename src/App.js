@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ThemeProvider, createTheme } from '@mui/material';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
 import Navbar from './components/Navbar';
@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import InfosTabac from './pages/InfosTabac';
 import AppMobile from './pages/AppMobile';
+import './App.css';
 
 const theme = createTheme({
   palette: {
@@ -24,7 +25,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Router>
+      <Router basename="/new-life-v1">
         <div className="app">
           <Navbar />
           <Routes>

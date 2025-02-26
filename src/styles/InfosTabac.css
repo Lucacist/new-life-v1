@@ -42,24 +42,55 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  margin-bottom: 1rem;
-  line-height: 1.1;
+  margin-bottom: 2rem;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .section {
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
   opacity: 0;
   animation: fadeIn 1s ease-out forwards;
   position: relative;
+  padding: 0 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.section-title {
-  color: var(--primary-color);
-  font-size: 3.5rem;
-  font-weight: 800;
-  margin-bottom: 4rem;
+.section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
   letter-spacing: -1px;
-  line-height: 1.1;
+}
+
+.section h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+  background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.section h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+}
+
+.section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
 }
 
 .subsection {
@@ -88,36 +119,34 @@
 }
 
 .list-item {
-  color: var(--text-secondary);
   font-size: 1.2rem;
   line-height: 1.8;
-  font-weight: 300;
-  margin-bottom: 2rem;
-  padding-left: 2rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
   position: relative;
-  transform: translateX(0);
-  transition: transform 0.3s ease;
+}
+
+.list-item::before {
+  content: "•";
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  font-size: 1.4rem;
 }
 
 .list-item:hover {
   transform: translateX(10px);
 }
 
-.list-item::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.8rem;
-  width: 8px;
-  height: 8px;
-  background: var(--primary-color);
-  border-radius: 50%;
-}
-
 .highlight-box {
-  margin: 4rem 0;
-  padding: 0;
+  margin: 2rem auto;
+  padding: 2rem;
   position: relative;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 20px;
+  max-width: 1000px;
+  width: calc(100% - 40px);
 }
 
 .highlight-box::before {
@@ -132,11 +161,10 @@
 }
 
 .highlight-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
   color: var(--text-primary);
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-  letter-spacing: -0.5px;
 }
 
 /* Animations */
@@ -161,25 +189,111 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .infos-title h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   
-  .section-title {
+  .section h2 {
+    font-size: 2.2rem;
+  }
+  
+  .section h3 {
+    font-size: 1.6rem;
+  }
+  
+  .section h4 {
+    font-size: 1.3rem;
+  }
+  
+  .section p {
+    font-size: 1.15rem;
+  }
+  
+  .list-item {
+    font-size: 1.15rem;
+  }
+  
+  .highlight-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .infos-title h1 {
+    font-size: 3.5rem;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+  }
+  
+  .section h3 {
+    font-size: 1.4rem;
+  }
+  
+  .section h4 {
+    font-size: 1.2rem;
+  }
+  
+  .section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .list-item {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding-left: 1.2rem;
+  }
+  
+  .highlight-title {
+    font-size: 1.6rem;
+  }
+  
+  .highlight-box {
+    padding: 1.5rem;
+    width: calc(100% - 30px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .infos-title h1 {
     font-size: 2.5rem;
+    padding: 0 15px;
   }
   
-  .subsection-title {
+  .section {
+    padding: 0 15px;
+  }
+  
+  .section h2 {
     font-size: 1.8rem;
   }
   
-  .content-text,
-  .list-item {
+  .section h3 {
+    font-size: 1.2rem;
+  }
+  
+  .section h4 {
     font-size: 1.1rem;
   }
   
-  .highlight-box::before {
-    left: -1rem;
+  .section p {
+    font-size: 1rem;
+  }
+  
+  .list-item {
+    font-size: 1rem;
+    padding-left: 1rem;
+  }
+  
+  .highlight-title {
+    font-size: 1.4rem;
+  }
+  
+  .highlight-box {
+    padding: 1.25rem;
+    width: calc(100% - 20px);
   }
 }

@@ -1,19 +1,22 @@
 .home-container {
+  width: 100%;
   min-height: 100vh;
-  background: var(--background-dark);
-  color: var(--text-primary);
-  padding: 0;
+  padding: 120px 0 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  overflow-x: hidden;
+  background: var(--background-dark);
+  color: var(--text-primary);
   position: relative;
-  overflow: hidden;
 }
 
 .title-box {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  padding: 0 20px;
   text-align: center;
-  margin-bottom: 2rem;
   position: relative;
   z-index: 2;
 }
@@ -25,16 +28,35 @@
   background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
   color: transparent;
-  margin-bottom: 1rem;
   animation: fadeInUp 1s ease-out;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.title-box h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.title-box h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+  text-align: center;
 }
 
 .content-section {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 6rem;
+  padding: 2rem 20px;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -42,21 +64,25 @@
 }
 
 .text-content {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   color: var(--text-secondary);
+  width: 100%;
   font-size: 1.25rem;
   line-height: 1.8;
   font-weight: 300;
-  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin: 4rem 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 20px;
   animation: fadeIn 1s ease-out 0.7s both;
 }
 
@@ -102,6 +128,40 @@
   opacity: 1;
 }
 
+@media screen and (max-width: 768px) {
+  .store-buttons img {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .store-buttons img {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .store-images {
+    gap: 1.5rem;
+  }
+
+  .store-images img {
+    max-width: 160px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .store-images {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .store-images img {
+    max-width: 140px;
+  }
+}
+
 /* Animations */
 @keyframes fadeInUp {
   from {
@@ -137,11 +197,98 @@
   z-index: 1;
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 1200px) {
+  .title-box h1 {
+    font-size: 6rem;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .title-box h2 {
+    font-size: 2.2rem;
+  }
+  
+  .title-box h3 {
+    font-size: 1.6rem;
+  }
+  
+  .text-content {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    padding: 100px 0 40px;
+  }
+
+  .title-box {
+    margin-bottom: 3rem;
+  }
+
+  .title-box h1 {
+    font-size: 4rem;
+  }
+  
+  .title-box h2 {
+    font-size: 2rem;
+  }
+  
+  .title-box h3 {
+    font-size: 1.4rem;
+  }
+  
+  .text-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+  }
+  
+  .content-section {
+    margin-bottom: 4rem;
+  }
+
+  .feature-grid {
+    margin: 3rem auto;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-container {
+    padding: 80px 0 30px;
+  }
+
+  .title-box {
+    padding: 0 15px;
+    margin-bottom: 2rem;
+  }
+
+  .title-box h1 {
+    font-size: 2.5rem;
+  }
+  
+  .title-box h2 {
+    font-size: 1.8rem;
+  }
+  
+  .title-box h3 {
+    font-size: 1.2rem;
+  }
+  
+  .text-content {
+    font-size: 1rem;
+    padding: 0 15px;
+    margin-bottom: 2rem;
+  }
+  
+  .content-section {
+    padding: 1.5rem 15px;
+    margin-bottom: 3rem;
+  }
+  
+  .feature-grid {
+    padding: 0 15px;
+    margin: 2rem auto;
+    gap: 1rem;
   }
 }

@@ -3,9 +3,9 @@ import { Typography, Box } from '@mui/material';
 import { useLocation } from 'react-router-dom';
 import '../styles/Footer.css';
 
-const Footer = () => {
+function Footer() {
   const location = useLocation();
-  const isHome = location.pathname === '/';
+  const isHome = React.useMemo(() => location.pathname === '/', [location.pathname]);
 
   return (
     <Box component="footer" className={`footer ${isHome ? 'footer-fixed' : ''}`}>
@@ -14,6 +14,6 @@ const Footer = () => {
       </Typography>
     </Box>
   );
-};
+}
 
-export default Footer;
+export default React.memo(Footer);

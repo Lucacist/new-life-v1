@@ -12,7 +12,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 50;
+      const isScrolled = window.scrollY > 100;
       if (isScrolled !== scrolled) {
         setScrolled(isScrolled);
       }
@@ -36,12 +36,24 @@ const Navbar = () => {
   const menuItems = [
     { text: 'Accueil', path: '/' },
     { text: 'Infos Tabac', path: '/infos' },
-    { text: 'Statistiques', path: '/app' }
+    { text: 'Statistiques', path: '/stats' }
   ];
 
   return (
     <>
-      <AppBar position="fixed" className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+      <AppBar 
+        position="fixed" 
+        className={`navbar ${scrolled ? 'scrolled' : ''}`}
+        elevation={0}
+        sx={{ 
+          background: 'transparent',
+          boxShadow: 'none',
+          '& .MuiPaper-root': {
+            backgroundColor: 'transparent',
+            boxShadow: 'none'
+          }
+        }}
+      >
         <Toolbar className="navbar-toolbar">
           <Typography variant="h6" component={Link} to="/" className="navbar-brand">
             NEW LIFE

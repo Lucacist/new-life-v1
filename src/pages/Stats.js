@@ -19,7 +19,7 @@ import {
 import '../styles/variables.css';
 import '../styles/Stats.css';
 
-const AppMobile = () => {
+const Stats = () => {
   // Données pour le graphique de prévalence du tabagisme
   const prevalenceData = [
     { year: '2014', value: 28.6 },
@@ -57,7 +57,7 @@ const AppMobile = () => {
         </div>
 
         <div className="chart-section">
-          <Typography variant="h2" className="chart-title">
+          <Typography variant="h2" className="chart-title" sx={{ my: 8 }}>
             Évolution du Tabagisme Quotidien (18-75 ans)
           </Typography>
           <div className="chart-container">
@@ -92,7 +92,7 @@ const AppMobile = () => {
         </div>
 
         <div className="chart-section">
-          <Typography variant="h2" className="chart-title">
+          <Typography variant="h2" className="chart-title" sx={{ my: 8 }}>
             Répartition par Sexe en 2023
           </Typography>
           <div className="chart-container">
@@ -131,7 +131,7 @@ const AppMobile = () => {
         </div>
 
         <div className="chart-section">
-          <Typography variant="h2" className="chart-title">
+          <Typography variant="h2" className="chart-title" sx={{ my: 8 }}>
             Évolution chez les Jeunes de 17 ans
           </Typography>
           <div className="chart-container">
@@ -187,9 +187,8 @@ const AppMobile = () => {
           </div>
         </div>
       </div>
-      <div style={{ height: '0px' }} /> {/* Suppression de l'espace pour le footer */}
     </div>
   );
 };
 
-export default AppMobile;
+export default Stats;

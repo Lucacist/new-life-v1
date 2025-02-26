@@ -1,10 +1,17 @@
 .navbar {
-  background-color: transparent !important;
-  box-shadow: none !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: transparent !important;
   transition: all 0.3s ease;
 }
 
-
+.navbar * {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
 
 .navbar-toolbar {
   padding: 1rem 2rem !important;

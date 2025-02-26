@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/new-life-v1/static/css/main.1ee3cba7.css",
-    "main.js": "/new-life-v1/static/js/main.e3d00e66.js",
-    "static/js/453.30f59d1b.chunk.js": "/new-life-v1/static/js/453.30f59d1b.chunk.js",
-    "static/media/google-play-badge.png": "/new-life-v1/static/media/google-play-badge.7a08c00550606a2eb9c0.png",
-    "static/media/app-store-badge.png": "/new-life-v1/static/media/app-store-badge.20face51b6f24c68c154.png",
-    "index.html": "/new-life-v1/index.html",
-    "main.1ee3cba7.css.map": "/new-life-v1/static/css/main.1ee3cba7.css.map",
-    "main.e3d00e66.js.map": "/new-life-v1/static/js/main.e3d00e66.js.map",
-    "453.30f59d1b.chunk.js.map": "/new-life-v1/static/js/453.30f59d1b.chunk.js.map"
+    "main.css": "/new-life-react-v1/static/css/main.0a1a8197.css",
+    "main.js": "/new-life-react-v1/static/js/main.5a1dbe64.js",
+    "static/js/453.30f59d1b.chunk.js": "/new-life-react-v1/static/js/453.30f59d1b.chunk.js",
+    "static/media/google-play-badge.png": "/new-life-react-v1/static/media/google-play-badge.7a08c00550606a2eb9c0.png",
+    "static/media/app-store-badge.png": "/new-life-react-v1/static/media/app-store-badge.20face51b6f24c68c154.png",
+    "index.html": "/new-life-react-v1/index.html",
+    "main.0a1a8197.css.map": "/new-life-react-v1/static/css/main.0a1a8197.css.map",
+    "main.5a1dbe64.js.map": "/new-life-react-v1/static/js/main.5a1dbe64.js.map",
+    "453.30f59d1b.chunk.js.map": "/new-life-react-v1/static/js/453.30f59d1b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ee3cba7.css",
-    "static/js/main.e3d00e66.js"
+    "static/css/main.0a1a8197.css",
+    "static/js/main.5a1dbe64.js"
   ]
 }

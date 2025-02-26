@@ -2,47 +2,54 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
 import Home from './pages/Home';
-import InfosTabac from './pages/InfosTabac';
 import Stats from './pages/Stats';
+import InfosTabac from './pages/InfosTabac';
+import Footer from './components/Footer';
 import PageTitle from './components/PageTitle';
+import './styles/variables.css';
 import './App.css';
 
 const theme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: '#00ff94',
+      main: '#1976d2',
     },
     secondary: {
-      main: '#007bff',
+      main: '#dc004e',
     },
     background: {
-      default: '#1a1a1a',
-      paper: '#2d2d2d',
-    },
-    text: {
-      primary: '#ffffff',
-      secondary: 'rgba(255, 255, 255, 0.7)',
+      default: '#121212',
+      paper: '#1e1e1e',
     },
   },
   typography: {
-    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
-    h1: {
-      fontSize: '2.5rem',
-      fontWeight: 700,
-    },
+    fontFamily: [
+      'Poppins',
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
     h2: {
       fontSize: '2rem',
-      fontWeight: 600,
-    },
-    h3: {
-      fontSize: '1.75rem',
-      fontWeight: 600,
-    },
+      '@media (max-width:768px)': {
+        fontSize: '1.5rem',
+      },
+      '@media (max-width:480px)': {
+        fontSize: '1.2rem',
+      },
+      fontWeight: 700,
+      letterSpacing: '-0.5px'
+    }
   },
 });
 

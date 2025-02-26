@@ -57,7 +57,11 @@ const Stats = () => {
         </div>
 
         <div className="chart-section">
-          <Typography variant="h2" className="chart-title" sx={{ my: 8 }}>
+          <Typography 
+            variant="h2" 
+            className="chart-title" 
+            sx={{ my: 4 }}
+          >
             Évolution du Tabagisme Quotidien (18-75 ans)
           </Typography>
           <div className="chart-container">
@@ -92,7 +96,11 @@ const Stats = () => {
         </div>
 
         <div className="chart-section">
-          <Typography variant="h2" className="chart-title" sx={{ my: 8 }}>
+          <Typography 
+            variant="h2" 
+            className="chart-title" 
+            sx={{ my: 4 }}
+          >
             Répartition par Sexe en 2023
           </Typography>
           <div className="chart-container">
@@ -131,7 +139,11 @@ const Stats = () => {
         </div>
 
         <div className="chart-section">
-          <Typography variant="h2" className="chart-title" sx={{ my: 8 }}>
+          <Typography 
+            variant="h2" 
+            className="chart-title" 
+            sx={{ my: 4 }}
+          >
             Évolution chez les Jeunes de 17 ans
           </Typography>
           <div className="chart-container">

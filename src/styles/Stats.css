@@ -39,7 +39,6 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-size: clamp(2.5rem, 8vw, 6rem);
   font-weight: 900;
   letter-spacing: -2px;
   margin-bottom: 1rem;
@@ -62,9 +61,6 @@
 
 .chart-title {
   color: var(--primary-color);
-  font-size: clamp(1.2rem, 4vw, 2.5rem);
-  font-weight: 700;
-  letter-spacing: -0.5px;
   text-align: center;
 }
 
@@ -96,7 +92,6 @@
 
 .source-text {
   color: var(--text-secondary);
-  font-size: clamp(0.8rem, 2vw, 0.9rem);
   text-align: right;
   margin-top: 1rem;
   font-style: italic;
@@ -122,7 +117,6 @@
 }
 
 .stat-value {
-  font-size: clamp(1.8rem, 5vw, 3rem);
   font-weight: 700;
   color: var(--primary-color);
   margin-bottom: 0.5rem;
@@ -130,7 +124,6 @@
 
 .stat-label {
   color: var(--text-secondary);
-  font-size: clamp(0.85rem, 2vw, 1.1rem);
   line-height: 1.5;
 }
 
@@ -203,7 +196,7 @@
   }
 
   .chart-title {
-    font-size: clamp(1rem, 3vw, 1.8rem);
+    text-align: center;
   }
 
   .chart-title::after {
@@ -226,15 +219,16 @@
   }
 
   .stat-value {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-bottom: 0.5rem;
   }
 
   .stat-label {
-    font-size: clamp(0.8rem, 1.8vw, 1rem);
+    line-height: 1.5;
   }
 
   .source-text {
-    font-size: clamp(0.75rem, 1.6vw, 0.85rem);
+    font-style: italic;
+    margin-top: 1rem;
   }
 }
 
@@ -253,7 +247,7 @@
   }
 
   .chart-title {
-    font-size: clamp(0.9rem, 2.5vw, 1.5rem);
+    text-align: center;
   }
 
   .chart-title::after {
@@ -276,15 +270,15 @@
   }
 
   .stat-value {
-    font-size: clamp(1.3rem, 3.5vw, 2rem);
+    margin-bottom: 0.5rem;
   }
 
   .stat-label {
-    font-size: clamp(0.75rem, 1.6vw, 0.9rem);
+    line-height: 1.5;
   }
 
   .source-text {
-    font-size: clamp(0.7rem, 1.5vw, 0.8rem);
+    font-style: italic;
     margin-top: 0.75rem;
   }
 }

@@ -206,6 +206,63 @@ const InfosTabac = () => {
             </div>
           </div>
         </section>
+
+        <section className="section" style={{ animationDelay: '1s' }}>
+          <Typography variant="h2" className="section-title">
+            Aspects Sociétaux et Économiques
+          </Typography>
+
+          <div className="subsection">
+            <Typography variant="h3" className="subsection-title">
+              Le coût du tabac
+            </Typography>
+            <Typography className="content-text">
+              Fumer représente une dépense importante sur le long terme. Le prix des cigarettes ne cesse d'augmenter, rendant cette habitude encore plus coûteuse pour les fumeurs.
+            </Typography>
+            <div className="list-item">
+              Un fumeur régulier dépense une somme considérable chaque année.
+            </div>
+            <div className="list-item">
+              L'argent économisé en arrêtant de fumer peut être réinvesti dans des projets personnels ou des loisirs.
+            </div>
+          </div>
+
+          <div className="subsection">
+            <Typography variant="h3" className="subsection-title">
+              L'influence de l'industrie du tabac
+            </Typography>
+            <Typography className="content-text">
+              Les grandes entreprises du tabac ont longtemps minimisé les dangers du tabagisme. Elles utilisent des stratégies marketing pour cibler de nouveaux consommateurs, notamment les jeunes.
+            </Typography>
+            <div className="list-item">
+              Publicités déguisées sur les réseaux sociaux et dans les films.
+            </div>
+            <div className="list-item">
+              Utilisation d'additifs pour rendre la cigarette plus addictive.
+            </div>
+            <div className="list-item">
+              Lobbying influent pour limiter les lois anti-tabac.
+            </div>
+          </div>
+
+          <div className="subsection">
+            <Typography variant="h3" className="subsection-title">
+              Le rôle de la prévention
+            </Typography>
+            <Typography className="content-text">
+              Des campagnes de sensibilisation et des mesures législatives ont été mises en place pour lutter contre le tabagisme.
+            </Typography>
+            <div className="list-item">
+              Interdiction de fumer dans les lieux publics.
+            </div>
+            <div className="list-item">
+              Augmentation des taxes sur le tabac.
+            </div>
+            <div className="list-item">
+              Images choc et avertissements sur les paquets de cigarettes.
+            </div>
+          </div>
+        </section>
       </div>
       <div style={{ height: '0px' }} /> {/* Suppression de l'espace pour le footer */}
     </div>
